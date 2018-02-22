@@ -251,12 +251,21 @@ header {
 #leftpane a{
 	display: block;
 	padding: 10px 0px;
+	word-break: break-all;
+	padding-right: 30px
 }
 
 #leftpane a:hover{
 	background-color: #1d1d1d;
 }
 
+#leftpane a span{
+	position: absolute;
+	right: 12px;
+	padding-top: -5px;
+	font-size: 13px;
+	color: #666;
+}
 #content{
 	margin-left: 340px;
 	margin-top: 120px; 
@@ -268,7 +277,7 @@ header {
 	list-style: none;
 	margin-top: 30px;
 	padding: 0;
-	width: 650px;
+	width: 640px;
 }
 #entry{
 	padding: 25px 0px; 
@@ -294,7 +303,15 @@ header {
 	margin-right: 5px;
 }
 #entries footer .date{
-	margin-right: 5px;
+	margin-right: 15px;
+	font-size: 12px;
+}
+#entries footer .support{
+	margin-left: 5px;
+	font-size: 16px;
+	float: left;
+}
+#entries footer .support .fav{
 	font-size: 12px;
 }
 .mbl{
@@ -317,6 +334,9 @@ header {
 	#subnav>ul>li{
 	display: table-cell;
 	padding: 0px 5px ;
+	}
+	#entries{
+		width: 550px;
 	}
 }
 @media (max-width: 768px){
@@ -349,7 +369,7 @@ header {
 		max-width: 65px;
 	}
 	.search{
-		width: 95%;
+		width: 75%;
 	}
 	#search-textbox{
 		margin-left: -9px;
@@ -386,26 +406,33 @@ header {
 		height: 25px;
 		width: 100%;
 	}
-	#navmbl ul{
-		list-style: none;
-		display: table;
-		padding: 0;
+	nav{
+		max-width: 1250px;
 		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 15px;
+		border-bottom: solid 1px black;
 	}
-	#navmbl li{
-		display: table-cell;
-		margin: auto;
-		width: 1%;
+	nav ul{
+		list-style: none;
+		padding: 0;
+	}
+	nav li{
+		display: inline-block;
+		width: 24%;
 	}
 	#content{
-		margin-top: 60px; 
+		margin-top: 40px; 
 		color: #bdbdbd;
 		width: 100%;
 		margin: 0 auto;
 	}
+	#thread h2{
+		padding-left: 2%;
+	}
 	#entries{
-		padding-left: 5%;
-		width: 90%;
+		padding-left: 2%;
+		width: 95%;
 	}
 	/*
 	#leftpane{
